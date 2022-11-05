@@ -1,7 +1,8 @@
 import styles from './index.module.sass'
 import {useRouter} from "next/router";
+import {NavItemType} from "../../../models/types/navItem.type";
 
-const navItems = [
+const navItems:NavItemType[] = [
     {
         icon: 'home',
         link: '/'
@@ -12,7 +13,7 @@ const navItems = [
     },
     {
         icon: 'place',
-        link: '/place'
+        link: '/place/kyoto'
     },
     {
         icon: 'person_outline',

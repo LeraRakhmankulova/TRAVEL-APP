@@ -1,0 +1,33 @@
+@import "assets/styles/variables.sass"
+
+.search
+  opacity: .85
+  background: rgba(255, 255, 255, 0.07)
+  border: 1px solid transparent
+  width: 100%
+  padding: 0 1rem
+  border-radius: 25px
+
+  display: flex
+  align-items: center
+  transition: border .4s ease
+
+  &:focus-within
+    border: 1px solid rgba($primary, .5)
+
+  > span
+    margin-right: 5px
+    cursor: pointer
+    opacity: .65
+    transition: opacity .4s ease
+
+    &:hover
+      opacity: .9
+
+  > input
+    padding: .85rem 0
+    background: transparent
+    color: #d3d3d3
+
+    &::placeholder
+      color: #d3d3d3

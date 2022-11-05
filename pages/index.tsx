@@ -8,7 +8,9 @@ import Filters from "../components/common/home/filters/Filters";
 const Home: NextPage<HomeType> = ({places}) => {
     return (
         <Container className={styles.container}>
-            <SearchSection/>
+            <div style={{width: '91%', margin: '0 auto'}}>
+                <SearchSection/>
+            </div>
         </Container>
     )
 }

@@ -1,10 +1,21 @@
 import styles from '../assets/styles/Home.module.css'
-import Footer from "../components/common/footer/Footer";
 import Container from "../components/ui/Container";
+import {GetStaticProps, NextPage} from "next";
+import {HomeType} from "../models/types/home.type";
 
-export default function Home() {
-  return (
-    <Container className={styles.container}>
-    </Container>
-  )
+const Home: NextPage<HomeType> = ({places}) => {
+    return (
+        <Container className={styles.container}>
+        </Container>
+    )
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+    const result = await fetch('/api/places')
+    const places = await result.json()
+    return {
+        props: {places}
+    }
+}
+
+export default Home

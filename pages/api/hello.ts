@@ -1,13 +1,18 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
+import type {NextApiRequest, NextApiResponse} from 'next'
+import {IPlace} from "../../models/interfaces/place.interface";
 
-type Data = {
-  name: string
-}
+const places: IPlace[] = [{
+    slug: 'Tokio',
+    location: 'Tokio',
+    imagePath: '',
+    description: '',
+    rating: 10,
+    duration: '',
+    distance: '20',
+    googleMapLink: '',
+    mapImage: ''
+}]
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ name: 'John Doe' })
+export default function handler(_req: NextApiRequest, res: NextApiResponse) {
+    res.status(200).json(places)
 }

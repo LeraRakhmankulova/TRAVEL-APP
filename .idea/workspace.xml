@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca5bba2-666e-4558-b1fd-64d93b5e6fcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/models/types/home.type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/common/home/filters/Filters.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/common/home/filters/index.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/common/home/searchSection/SearchSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/common/home/searchSection/index.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/search/Search.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/search/index.module.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/hello.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/hello.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/Home.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/variables.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/hello.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/places.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/explore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/explore.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667675980637</updated>
-      <workItem from="1667675984364" duration="4430000" />
+      <workItem from="1667675984364" duration="9438000" />
     </task>
     <servers />
   </component>

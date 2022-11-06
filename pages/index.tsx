@@ -5,12 +5,19 @@ import {HomeType} from "../models/types/home.type";
 import SearchSection from "../components/common/home/searchSection/SearchSection";
 import {API_URL} from "../constants";
 import PlaceItem from "../components/common/placeItem/PlaceItem";
+import {useState} from "react";
+import {IPlace} from "../models/interfaces/place.interface";
+import Search from "../components/ui/search/Search";
+import Filters from "../components/common/home/filters/Filters";
 
-const Home: NextPage<HomeType> = ({places}) => {
+const Home: NextPage<HomeType> = ({initialPlaces}) => {
+    const [places, setPlaces] = useState<IPlace[]>(initialPlaces)
     return (
         <Container className={styles.container}>
-            <div style={{width: '91%', margin: '0 auto'}}>
+            <div style={{width: '80%', margin: '0 auto'}}>
                 <SearchSection/>
+                <Search setPlaces={setPlaces} initialPlaces={initialPlaces}/>
+                <Filters setPlaces={setPlaces} initialPlaces={initialPlaces}/>
                 <PlaceItem places={places}/>
             </div>
         </Container>
@@ -19,9 +26,9 @@ const Home: NextPage<HomeType> = ({places}) => {
 
 export const getStaticProps: GetStaticProps = async () => {
     const result = await fetch(`${API_URL}/places`)
-    const places = await result.json()
+    const initialPlaces = await result.json()
     return {
-        props: {places}
+        props: {initialPlaces}
     }
 }
 

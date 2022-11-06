@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca5bba2-666e-4558-b1fd-64d93b5e6fcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/common/placeItem/PlaceItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/common/placeItem/index.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/types/location.type.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/types/search.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/common/home/filters/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/home/filters/Filters.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/common/home/filters/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/home/filters/index.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/home/searchSection/SearchSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/home/searchSection/SearchSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/home/searchSection/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/home/searchSection/index.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/placeItem/PlaceItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/placeItem/PlaceItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/placeItem/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/placeItem/index.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/search/Search.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ui/search/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/search/index.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/interfaces/place.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/interfaces/place.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/places.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/places.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/types/home.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/types/home.type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667675980637</updated>
       <workItem from="1667675984364" duration="11773000" />
-      <workItem from="1667715619863" duration="6932000" />
+      <workItem from="1667715619863" duration="14672000" />
     </task>
     <servers />
   </component>

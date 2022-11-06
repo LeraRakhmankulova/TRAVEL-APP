@@ -1,5 +1,6 @@
 import styles from './index.module.sass'
-import {FC} from "react";
+import {FC, useState} from "react";
+import cn from 'classnames'
 
 const cities = [
     {location: 'Paris'},
@@ -11,9 +12,14 @@ const cities = [
 ]
 
 const Filters: FC = () => {
+    const [filter, setFilter] = useState('')
     return (
         <div className={styles.filters}>
-            {cities.map((city, index) => <button key={index}>{city.location}</button>)}
+            {cities.map((city, index) =>
+                <button
+                    className={cn({[styles.active]: city.location === filter})}
+                    onClick={() => setFilter(city.location)}
+                    key={index}>{city.location}</button>)}
         </div>
     )
 }

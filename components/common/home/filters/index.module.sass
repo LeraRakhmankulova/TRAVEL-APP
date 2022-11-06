@@ -3,16 +3,21 @@
 .filters
   display: flex
   width: 100%
-  justify-content: space-between
   flex-wrap: wrap
-  margin-top: 1rem
+  margin-top: .2rem
+  justify-content: center
 
   > button
-    border: 2.5px solid $c-030303A8
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    border: 1px solid $c-030303A8
     padding: 0.3rem 1rem
     border-radius: 30px
     color: white
     transition: border .4s ease
+    min-width: 90px
+    margin: 0.5rem 1.2rem 0 0
 
-    &:hover
-      border: 2.5px solid #d3d3d3
+    &:hover, &.active
+      border: 1px solid $primary

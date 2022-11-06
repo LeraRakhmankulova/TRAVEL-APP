@@ -3,20 +3,22 @@ import Container from "../components/ui/Container";
 import {GetStaticProps, NextPage} from "next";
 import {HomeType} from "../models/types/home.type";
 import SearchSection from "../components/common/home/searchSection/SearchSection";
-import Filters from "../components/common/home/filters/Filters";
+import {API_URL} from "../constants";
+import PlaceItem from "../components/common/placeItem/PlaceItem";
 
 const Home: NextPage<HomeType> = ({places}) => {
     return (
         <Container className={styles.container}>
             <div style={{width: '91%', margin: '0 auto'}}>
                 <SearchSection/>
+                <PlaceItem places={places}/>
             </div>
         </Container>
     )
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const result = await fetch('http://localhost:3000/api/places')
+    const result = await fetch(`${API_URL}/places`)
     const places = await result.json()
     return {
         props: {places}

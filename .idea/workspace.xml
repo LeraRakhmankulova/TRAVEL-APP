@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca5bba2-666e-4558-b1fd-64d93b5e6fcd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/common/placeItem/PlaceItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/common/placeItem/index.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/types/location.type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/variables.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/home/filters/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/home/filters/Filters.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/common/home/filters/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/home/filters/index.module.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ui/search/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/search/index.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/interfaces/place.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/interfaces/place.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/places.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/places.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,23 +35,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "AtomSelectConfig",
-    "ts.external.directory.path": "C:\\Users\\Valeria\\Desktop\\TRAVEL-APP\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AtomSelectConfig&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Valeria\\Desktop\\TRAVEL-APP\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\public\images" />
       <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\models" />
     </key>
   </component>
@@ -57,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667675980637</updated>
       <workItem from="1667675984364" duration="11773000" />
+      <workItem from="1667715619863" duration="6932000" />
     </task>
     <servers />
   </component>

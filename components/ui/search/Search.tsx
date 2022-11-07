@@ -15,7 +15,7 @@ const Search: FC<SearchType> = ({setPlaces, initialPlaces, setIsLoading}) => {
                     place.location.country.toLowerCase().includes(value)))
             } else setPlaces(initialPlaces)
             setIsLoading(false)
-        }, 1500)
+        }, 500)
     }
 
     return (

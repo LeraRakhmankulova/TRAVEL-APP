@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca5bba2-666e-4558-b1fd-64d93b5e6fcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/ui/skeletons/Skeleton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/skeletons/index.module.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/footer/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/footer/index.module.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/common/home/filters/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/home/filters/Filters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/placeItem/PlaceItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/placeItem/PlaceItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/placeItem/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/placeItem/index.module.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ui/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/search/Search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/types/search.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/types/search.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/skeletons/Skeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/skeletons/Skeleton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/skeletons/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/skeletons/index.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/places/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/places/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

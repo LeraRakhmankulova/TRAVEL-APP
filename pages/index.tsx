@@ -12,13 +12,17 @@ import Filters from "../components/common/home/filters/Filters";
 
 const Home: NextPage<HomeType> = ({initialPlaces}) => {
     const [places, setPlaces] = useState<IPlace[]>(initialPlaces)
+    const [isLoading, setIsLoading] = useState(false)
     return (
         <Container className={styles.container}>
             <div style={{width: '80%', margin: '0 auto'}}>
                 <SearchSection/>
-                <Search setPlaces={setPlaces} initialPlaces={initialPlaces}/>
+                <Search
+                    setIsLoading={setIsLoading}
+                    setPlaces={setPlaces}
+                    initialPlaces={initialPlaces}/>
                 <Filters setPlaces={setPlaces} initialPlaces={initialPlaces}/>
-                <PlaceItem places={places}/>
+                <PlaceItem isLoading={isLoading} places={places}/>
             </div>
         </Container>
     )

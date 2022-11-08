@@ -1,18 +1,17 @@
-import Container from "../../components/ui/Container";
 import {GetStaticPaths, GetStaticProps, NextPage} from "next";
-import {API_URL} from "../../constants";
 import {IPlace} from "../../models/interfaces/place.interface";
-import {useRouter} from "next/router";
+import PlacePage from "../../components/common/place/Place";
+import Container from "../../components/ui/Container";
 
 interface IPlacePage {
     place: IPlace
 }
 
 const Place: NextPage<IPlacePage> = ({place}) => {
-    const router = useRouter()
-    const { slug } = router.query
     return (
-        <Container>{slug}</Container>
+        <Container>
+            <PlacePage place={place}/>
+        </Container>
     )
 }
 

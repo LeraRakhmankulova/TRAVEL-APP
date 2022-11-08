@@ -4,7 +4,7 @@ import {GetStaticProps, NextPage} from "next";
 import {HomeType} from "../models/types/home.type";
 import SearchSection from "../components/common/home/searchSection/SearchSection";
 import {API_URL} from "../constants";
-import PlaceItem from "../components/common/placeItem/PlaceItem";
+import PlaceItem from "../components/common/home/placeItem/PlaceItem";
 import {useState} from "react";
 import {IPlace} from "../models/interfaces/place.interface";
 import Search from "../components/ui/search/Search";

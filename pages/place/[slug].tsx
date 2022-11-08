@@ -2,12 +2,10 @@ import {GetStaticPaths, GetStaticProps, NextPage} from "next";
 import {IPlace} from "../../models/interfaces/place.interface";
 import PlacePage from "../../components/common/place/Place";
 import Container from "../../components/ui/Container";
+import {API_URL} from "../../constants";
+import Home from "../index";
 
-interface IPlacePage {
-    place: IPlace
-}
-
-const Place: NextPage<IPlacePage> = ({place}) => {
+const Place: NextPage<{ place: IPlace }> = ({place}) => {
     return (
         <Container>
             <PlacePage place={place}/>
@@ -19,16 +17,19 @@ const Place: NextPage<IPlacePage> = ({place}) => {
 //     const result = await fetch(`${API_URL}/{slug}`)
 //
 //     const paths = result.map(place => ({
-//         params: { slug: place.slug.current }
+//         params: { slug: place.slug }
 //     }))
 //
-//     return { paths, fallback: 'blocking' }
+//
+//     return { paths, fallback: true }
 // }
 //
-// export const getStaticProps: GetStaticProps = async ({ params }) => {
-//     const place = await fetch(`${API_URL}/(params.slug)`)
-//
-//     return { props: { place } }
+// export const getStaticProps: GetStaticProps = async () => {
+//     const result = await fetch(`${API_URL}`)
+//     const places = await result.json()
+//     return {
+//         props: {places}
+//     }
 // }
 
 export default Place

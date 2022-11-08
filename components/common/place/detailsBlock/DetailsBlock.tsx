@@ -14,7 +14,7 @@ const DetailsBlock: FC<{ place: IPlace }> = ({place}) => {
                 <div className={styles.details__info}>
                     <div>
                         <span className="material-icons-outlined">star_half</span>
-                        <h5>{place.rating}</h5>
+                        <h5>{place.rating} / 10</h5>
                     </div>
                     <div>
                         <span className="material-icons-outlined">calendar_month</span>

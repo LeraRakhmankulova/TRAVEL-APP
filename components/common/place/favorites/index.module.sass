@@ -1,0 +1,19 @@
+.favorites
+  position: relative
+
+  &__wrapper
+    overflow: hidden
+    position: absolute
+    top: 10px
+    right: 0
+    background: rgba(0, 0, 0, 0.75)
+    backdrop-filter: blur(10px)
+    padding: 13px 0
+    border-radius: 20px
+    z-index: 2
+
+  &__item
+    padding: 7px 25px
+    transition: background .4s ease
+    &:hover
+      background: darken(rgba(0, 0, 0, 0.75), 0.1%)

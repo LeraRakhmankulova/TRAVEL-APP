@@ -1,7 +1,7 @@
 import {FC, PropsWithChildren} from "react";
-import Footer from "../common/footer/Footer";
+import Footer from "../../common/footer/Footer";
 
-const Container: FC<PropsWithChildren<any>> = ({children}) => {
+const MainContainer: FC<PropsWithChildren<any>> = ({children}) => {
     return (
         <div style={{maxWidth: '480px', margin: '0 auto'}}>{children}
             <Footer/>
@@ -9,4 +9,4 @@ const Container: FC<PropsWithChildren<any>> = ({children}) => {
     )
 }
 
-export default Container
+export default MainContainer

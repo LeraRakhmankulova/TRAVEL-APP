@@ -9,7 +9,6 @@ const SearchSection: FC = () => {
         }}>
             <div>
                 <h1>Best places for trip</h1>
-
             </div>
         </section>
     )

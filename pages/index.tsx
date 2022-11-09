@@ -1,5 +1,5 @@
 import styles from '../assets/styles/Home.module.css'
-import Container from "../components/ui/Container";
+import MainContainer from "../components/ui/containers/MainContainer";
 import {GetStaticProps, NextPage} from "next";
 import {HomeType} from "../models/types/home.type";
 import SearchSection from "../components/common/home/searchSection/SearchSection";
@@ -14,7 +14,7 @@ const Home: NextPage<HomeType> = ({initialPlaces}) => {
     const [places, setPlaces] = useState<IPlace[]>(initialPlaces)
     const [isLoading, setIsLoading] = useState(false)
     return (
-        <Container className={styles.container}>
+        <MainContainer className={styles.container}>
             <div style={{width: '80%', margin: '0 auto'}}>
                 <SearchSection/>
                 <Search
@@ -24,7 +24,7 @@ const Home: NextPage<HomeType> = ({initialPlaces}) => {
                 <Filters setPlaces={setPlaces} initialPlaces={initialPlaces}/>
                 <PlaceItem isLoading={isLoading} places={places}/>
             </div>
-        </Container>
+        </MainContainer>
     )
 }
 

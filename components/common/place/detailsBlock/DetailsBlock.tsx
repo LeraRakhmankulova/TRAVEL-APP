@@ -1,8 +1,10 @@
 import styles from './index.module.sass'
 import {IPlace} from "../../../../models/interfaces/place.interface";
 import {FC} from "react";
+import Map from '../map/Map'
 
 const DetailsBlock: FC<{ place: IPlace }> = ({place}) => {
+    const location = 'France'
     return (
         <section className={styles.details}>
             <div className={styles.details__header}>
@@ -11,6 +13,7 @@ const DetailsBlock: FC<{ place: IPlace }> = ({place}) => {
             </div>
             <div className={styles.details__description}>
                 <p>{place.description}</p>
+                <Map location={location}/>
                 <div className={styles.details__info}>
                     <div>
                         <span className="material-icons-outlined">star_half</span>

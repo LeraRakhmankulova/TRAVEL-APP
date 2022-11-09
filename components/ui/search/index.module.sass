@@ -1,20 +1,20 @@
 @import "assets/styles/variables.sass"
+@import "assets/styles/mixins.sass"
 
 .search
-  opacity: .85
-  background: rgba(35, 35, 35, .85)
+  opacity: .8
+  @include blur-effect
   border: 1px solid transparent
   width: 100%
   padding: 0 1rem
   border-radius: 25px
-
   display: flex
   align-items: center
   transition: border .4s ease
 
   &:focus-within
     border: 1px solid rgba($primary, .5)
-    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.09)
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.09)
     background: rgba(35, 35, 35, .95)
 
   > span
@@ -30,6 +30,7 @@
     padding: .85rem 0
     background: transparent
     color: #d3d3d3
+    width: 100%
 
     &::placeholder
       color: #d3d3d3

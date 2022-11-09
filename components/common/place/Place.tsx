@@ -24,7 +24,7 @@ const PlacePage: FC<{ place: IPlace }> = ({place}) => {
         <div className={styles.place}>
             <div style={{
                 backgroundImage: `url(${mock.imagePath})`,
-                height: '50vh',
+                height: '60vh',
                 position: 'relative',
                 backgroundSize: 'cover'
             }}>

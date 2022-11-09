@@ -1,0 +1,11 @@
+@mixin blur-effect
+  background: rgba(0, 0, 0, .1)
+  backdrop-filter: blur(55px)
+  box-shadow: inset 0 0 30px rgba(2, 2, 2, 0.15)
+
+@mixin appearance-effect($name)
+  @keyframes #{$name}
+    from
+      opacity: 0
+    to
+      opacity: 1

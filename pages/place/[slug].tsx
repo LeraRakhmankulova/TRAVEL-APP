@@ -1,15 +1,13 @@
 import {GetStaticPaths, GetStaticProps, NextPage} from "next";
 import {IPlace} from "../../models/interfaces/place.interface";
 import PlacePage from "../../components/common/place/Place";
-import Container from "../../components/ui/Container";
-import {API_URL} from "../../constants";
-import Home from "../index";
+import PlaceContainer from "../../components/ui/containers/PlaceContainer";
 
 const Place: NextPage<{ place: IPlace }> = ({place}) => {
     return (
-        <Container>
+        <PlaceContainer>
             <PlacePage place={place}/>
-        </Container>
+        </PlaceContainer>
     )
 }
 

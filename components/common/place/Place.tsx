@@ -22,11 +22,18 @@ const PlacePage: FC<{ place: IPlace }> = ({place}) => {
     }
     return (
         <div className={styles.place}>
-            <div style={{backgroundImage: `url(${mock.imagePath})`, height: '50vh', position: 'relative', backgroundSize: 'cover'}}>
+            <div style={{
+                backgroundImage: `url(${mock.imagePath})`,
+                height: '50vh',
+                position: 'relative',
+                backgroundSize: 'cover'
+            }}>
                 <PlaceHeader/>
                 <div className={styles.place__details}>
                     <DetailsBlock place={mock}/>
-                    <TripButton/>
+                    <div className={styles.place__btn}>
+                        <TripButton/>
+                    </div>
                 </div>
             </div>
         </div>

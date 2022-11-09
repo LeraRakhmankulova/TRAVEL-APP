@@ -3,6 +3,7 @@ import {IPlace} from "../../../models/interfaces/place.interface";
 import TripButton from "./tripButton/TripButton";
 import DetailsBlock from "./detailsBlock/DetailsBlock";
 import styles from './index.module.sass'
+import PlaceHeader from "./header/PlaceHeader";
 
 const PlacePage: FC<{ place: IPlace }> = ({place}) => {
     const mock: IPlace = {
@@ -21,7 +22,8 @@ const PlacePage: FC<{ place: IPlace }> = ({place}) => {
     }
     return (
         <div className={styles.place}>
-            <div style={{backgroundImage: `url(${mock.imagePath})`, height: '50vh', position: 'relative'}}>
+            <div style={{backgroundImage: `url(${mock.imagePath})`, height: '50vh', position: 'relative', backgroundSize: 'cover'}}>
+                <PlaceHeader/>
                 <div className={styles.place__details}>
                     <DetailsBlock place={mock}/>
                     <TripButton/>

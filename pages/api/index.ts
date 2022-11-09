@@ -27,6 +27,19 @@ export const place: IPlace[] = [{
     distance: '20',
     googleMapLink: '',
     mapImage: ''
+}, {
+    slug: 'USA',
+    location: {
+        country: 'USA',
+        city: 'New York'
+    },
+    imagePath: 'http://localhost:3000/images/newYork.jpg',
+    description: '',
+    rating: 10,
+    duration: '',
+    distance: '20',
+    googleMapLink: '',
+    mapImage: ''
 }]
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {

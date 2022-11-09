@@ -20,7 +20,7 @@ const PlaceItem: FC<LocationType> = ({places, isLoading}) => {
                             <Link href={`/place/${item.slug}`}
                                   key={index}>
                                 <div
-                                    style={{backgroundImage: `url(${item.imagePath})`}}
+                                    style={{backgroundImage: `url(${item.imagePath})`, zIndex: `${index}`}}
                                     className={styles.place__item}>
                                     <h2>{item.location.country}, {item.location.city}</h2>
                                 </div>

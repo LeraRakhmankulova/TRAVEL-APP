@@ -1,4 +1,4 @@
-import MainContainer from "../components/ui/containers/MainContainer";
+import MainContainer from "@/components/ui/containers/MainContainer";
 
 const Explore = () => {
     return (

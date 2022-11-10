@@ -2,12 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca5bba2-666e-4558-b1fd-64d93b5e6fcd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/models/types/setState.type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/home/filters/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/home/filters/Filters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/search/Search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/skeletons/Skeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/skeletons/Skeleton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/skeletons/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/skeletons/index.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/places/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/places/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/Home.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/globals.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/mixins.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/variables.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/footer/Footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/footer/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/home/filters/Filters.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/home/filters/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/home/placeItem/PlaceItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/home/placeItem/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/home/searchSection/SearchSection.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/home/searchSection/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/Place.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/detailsBlock/DetailsBlock.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/detailsBlock/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/favorites/Favorites.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/favorites/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/header/PlaceHeader.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/header/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/map/Map.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/map/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/tripButton/TripButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/place/tripButton/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/containers/MainContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/containers/PlaceContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/search/Search.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/search/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/skeletons/Skeleton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/skeletons/index.module.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/interfaces/place.interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/types/home.type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/types/location.type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/types/navItem.type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/types/search.type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/explore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/explore.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/place/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/place/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +80,18 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AtomSelectConfig&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Valeria\\Desktop\\TRAVEL-APP\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\public\images" />
-      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\models" />
+      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\app" />
+      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\components\ui\containers" />
+      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\components\common\home" />
+      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\pages" />
+      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\pages\api\places" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,6 +104,15 @@
       <updated>1667675980637</updated>
       <workItem from="1667675984364" duration="11773000" />
       <workItem from="1667715619863" duration="14672000" />
+      <workItem from="1667851520253" duration="188000" />
+      <workItem from="1667851721581" duration="2122000" />
+      <workItem from="1667855945680" duration="5932000" />
+      <workItem from="1667918002433" duration="11232000" />
+      <workItem from="1668015424940" duration="1323000" />
+      <workItem from="1668018885799" duration="510000" />
+      <workItem from="1668020556482" duration="8147000" />
+      <workItem from="1668077928015" duration="10284000" />
+      <workItem from="1668102241694" duration="846000" />
     </task>
     <servers />
   </component>

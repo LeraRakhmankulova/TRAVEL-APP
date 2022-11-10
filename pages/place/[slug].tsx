@@ -1,7 +1,7 @@
-import {GetStaticPaths, GetStaticProps, NextPage} from "next";
-import {IPlace} from "../../models/interfaces/place.interface";
-import PlacePage from "../../components/common/place/Place";
-import PlaceContainer from "../../components/ui/containers/PlaceContainer";
+import {IPlace} from "@/models/interfaces/place.interface";
+import PlacePage from '@/components/common/place/Place';
+import PlaceContainer from "@/components/ui/containers/PlaceContainer";
+import {NextPage} from "next";
 
 const Place: NextPage<{ place: IPlace }> = ({place}) => {
     return (

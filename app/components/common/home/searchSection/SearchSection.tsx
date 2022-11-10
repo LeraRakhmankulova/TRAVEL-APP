@@ -1,6 +1,6 @@
 import styles from './index.module.sass'
 import {FC} from "react";
-import map from '../../../../assets/images/map.png'
+import map from '@/assets/images/map.png'
 
 const SearchSection: FC = () => {
     return (

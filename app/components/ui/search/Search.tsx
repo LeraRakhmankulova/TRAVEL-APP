@@ -1,6 +1,6 @@
 import styles from './index.module.sass'
 import {ChangeEvent, FC, useState} from "react";
-import {SearchType} from "../../../models/types/search.type";
+import {SearchType} from "@/models/types/search.type";
 
 const Search: FC<SearchType> = ({setPlaces, initialPlaces, setIsLoading}) => {
     const [searchValue, setSearchValue] = useState('')

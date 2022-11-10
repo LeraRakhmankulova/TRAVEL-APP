@@ -1,4 +1,4 @@
-import {LocationType} from "../types/location.type";
+import {LocationType} from "@/models/types/location.type";
 
 export interface IPlace {
     slug: string

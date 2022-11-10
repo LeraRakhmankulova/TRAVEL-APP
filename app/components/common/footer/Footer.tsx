@@ -1,6 +1,6 @@
 import styles from './index.module.sass'
 import {useRouter} from "next/router";
-import {NavItemType} from "../../../models/types/navItem.type";
+import {NavItemType} from "@/models/types/navItem.type";
 
 const navItems:NavItemType[] = [
     {

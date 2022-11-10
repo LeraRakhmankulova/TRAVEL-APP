@@ -1,10 +1,10 @@
 import styles from './index.module.sass'
-import {IPlace} from "../../../../models/interfaces/place.interface";
-import {FC} from "react";
+import {IPlace} from "@/models/interfaces/place.interface";
+import {FC, useState} from "react";
 import Map from '../map/Map'
 
 const DetailsBlock: FC<{ place: IPlace }> = ({place}) => {
-    const location = 'France'
+    const location = 'Russia'
     return (
         <section className={styles.details}>
             <div className={styles.details__header}>

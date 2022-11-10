@@ -1,5 +1,5 @@
 import {FC} from "react";
-import {IPlace} from "../../../models/interfaces/place.interface";
+import {IPlace} from "@/models/interfaces/place.interface";
 import TripButton from "./tripButton/TripButton";
 import DetailsBlock from "./detailsBlock/DetailsBlock";
 import styles from './index.module.sass'

@@ -1,5 +1,6 @@
 import {FC, PropsWithChildren} from "react";
-import Footer from "../../common/footer/Footer";
+import Footer from "@/components/common/footer/Footer";
+
 
 const MainContainer: FC<PropsWithChildren<any>> = ({children}) => {
     return (

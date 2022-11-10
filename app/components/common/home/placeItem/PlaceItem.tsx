@@ -1,6 +1,6 @@
 import styles from './index.module.sass'
 import {FC} from "react";
-import {IPlace} from "../../../../models/interfaces/place.interface";
+import {IPlace} from "@/models/interfaces/place.interface";
 import Link from "next/link";
 import Skeletons from "../../../ui/skeletons/Skeleton";
 

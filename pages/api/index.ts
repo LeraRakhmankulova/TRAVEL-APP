@@ -1,5 +1,5 @@
 import type {NextApiRequest, NextApiResponse} from 'next'
-import {IPlace} from "../../models/interfaces/place.interface";
+import {IPlace} from "@/models/interfaces/place.interface";
 
 export const place: IPlace[] = [{
     slug: 'Tokio',

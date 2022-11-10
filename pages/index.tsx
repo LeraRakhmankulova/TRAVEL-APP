@@ -9,12 +9,15 @@ import {IPlace} from "@/models/interfaces/place.interface";
 import Search from "@/components/ui/search/Search";
 import Filters from "@/components/common/home/filters/Filters";
 import {API_URL} from "../app/constants";
+import Meta from "@/utils/Meta";
 
 const Home: NextPage<HomeType> = ({initialPlaces}) => {
     const [places, setPlaces] = useState<IPlace[]>(initialPlaces)
     const [isLoading, setIsLoading] = useState(false)
     return (
         <MainContainer className={styles.container}>
+            <Meta title="Book your future trip"
+                  description="Best routes for travelling"/>
             <div style={{width: '80%', margin: '0 auto'}}>
                 <SearchSection/>
                 <Search

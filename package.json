@@ -19,6 +19,7 @@
     "framer-motion-3d": "^7.6.5",
     "material-icons": "^1.12.1",
     "next": "13.0.2",
+    "nextjs-progressbar": "^0.0.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-loading-skeleton": "^3.1.0",

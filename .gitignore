@@ -5,6 +5,9 @@
 
 # dependencies
 /node_modules
+/travel/node_modules
+/travel/config
+/travel/yarn.lock
 /.pnp
 .pnp.js
 /travelapp/node_modules

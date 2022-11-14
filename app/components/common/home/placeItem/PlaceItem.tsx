@@ -3,6 +3,7 @@ import {FC} from "react";
 import {IPlace} from "@/models/interfaces/place.interface";
 import Link from "next/link";
 import Skeletons from "../../../ui/skeletons/Skeleton";
+import {urlFor} from "../../../../sanity";
 
 type LocationType = {
     places: IPlace[]
@@ -20,7 +21,7 @@ const PlaceItem: FC<LocationType> = ({places, isLoading}) => {
                             <Link href={`/place/${item.slug}`}
                                   key={index}>
                                 <div
-                                    style={{backgroundImage: `url(${item.imagePath})`, zIndex: `${index}`}}
+                                    style={{backgroundImage: `url(${urlFor(item.imagePath).url()})`, zIndex: `${index}`}}
                                     className={styles.place__item}>
                                     <h2>{item.location.country}, {item.location.city}</h2>
                                 </div>

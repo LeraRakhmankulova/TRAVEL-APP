@@ -10,9 +10,9 @@ import Search from "@/components/ui/search/Search";
 import Filters from "@/components/common/home/filters/Filters";
 import {API_URL} from "../app/constants";
 import Meta from "@/utils/Meta";
-import { createClient } from "next-sanity";
+import {sanityClient} from "../app/sanity";
 
-
+const placeQuery = `*[_type == "place"]`
 const Home: NextPage<HomeType> = ({initialPlaces}) => {
     const [places, setPlaces] = useState<IPlace[]>(initialPlaces)
     const [isLoading, setIsLoading] = useState(false)
@@ -34,10 +34,13 @@ const Home: NextPage<HomeType> = ({initialPlaces}) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const result = await fetch(`${API_URL}`)
-    const initialPlaces = await result.json()
+    let queries;
+    const result = await sanityClient.fetch(placeQuery)
+
     return {
-        props: {initialPlaces}
+        props: {
+            initialPlaces: result
+        }
     }
 }
 

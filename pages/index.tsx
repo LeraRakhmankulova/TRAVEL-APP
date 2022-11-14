@@ -10,6 +10,8 @@ import Search from "@/components/ui/search/Search";
 import Filters from "@/components/common/home/filters/Filters";
 import {API_URL} from "../app/constants";
 import Meta from "@/utils/Meta";
+import { createClient } from "next-sanity";
+
 
 const Home: NextPage<HomeType> = ({initialPlaces}) => {
     const [places, setPlaces] = useState<IPlace[]>(initialPlaces)

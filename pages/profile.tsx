@@ -1,8 +1,10 @@
-import MainContainer from "../components/ui/containers/MainContainer";
+import MainContainer from "@/components/ui/containers/MainContainer";
 
 const Profile = () => {
     return (
-        <MainContainer>kklk</MainContainer>
+        <MainContainer>
+            <div>hhkh</div>
+        </MainContainer>
     )
 }
 

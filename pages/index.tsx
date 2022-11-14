@@ -13,6 +13,7 @@ import Meta from "@/utils/Meta";
 import {sanityClient} from "../app/sanity";
 
 const placeQuery = `*[_type == "place"]`
+
 const Home: NextPage<HomeType> = ({initialPlaces}) => {
     const [places, setPlaces] = useState<IPlace[]>(initialPlaces)
     const [isLoading, setIsLoading] = useState(false)
@@ -32,7 +33,6 @@ const Home: NextPage<HomeType> = ({initialPlaces}) => {
         </MainContainer>
     )
 }
-
 export const getStaticProps: GetStaticProps = async () => {
     let queries;
     const result = await sanityClient.fetch(placeQuery)

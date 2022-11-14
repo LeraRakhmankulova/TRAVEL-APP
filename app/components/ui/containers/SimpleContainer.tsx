@@ -1,6 +1,6 @@
 import {FC, PropsWithChildren} from "react";
 
-const PlaceContainer: FC<PropsWithChildren<any>> = ({children}) => {
+const SimpleContainer: FC<PropsWithChildren<any>> = ({children}) => {
     return (
         <div style={{maxWidth: '480px', margin: '0 auto'}}>
             {children}
@@ -8,4 +8,4 @@ const PlaceContainer: FC<PropsWithChildren<any>> = ({children}) => {
     )
 }
 
-export default PlaceContainer
+export default SimpleContainer

@@ -1,6 +1,6 @@
 import {IPlace} from "@/models/interfaces/place.interface";
 import PlacePage from '@/components/common/place/Place';
-import PlaceContainer from "@/components/ui/containers/PlaceContainer";
+import SimpleContainer from "@/components/ui/containers/SimpleContainer";
 import {GetStaticPaths, GetStaticProps, NextPage} from "next";
 import {sanityClient} from "../../app/sanity";
 
@@ -8,9 +8,9 @@ const placeQuery = `*[_type == "place"]`;
 
 const Place: NextPage<{ place: IPlace }> = ({place}) => {
     return (
-        <PlaceContainer>
+        <SimpleContainer>
             <PlacePage place={place}/>
-        </PlaceContainer>
+        </SimpleContainer>
     )
 }
 

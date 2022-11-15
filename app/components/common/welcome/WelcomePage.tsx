@@ -3,7 +3,7 @@ import map from '@/assets/images/welcomeMap.svg';
 import fPlace from '@/assets/images/placeItem1.svg';
 import sPlace from '@/assets/images/placeItem2.svg';
 import tPlace from '@/assets/images/placeItem3.svg';
-import {motion, useMotionValue, useTransform} from "framer-motion"
+import {motion} from "framer-motion"
 import Link from "next/link";
 
 const placeImgPath = [

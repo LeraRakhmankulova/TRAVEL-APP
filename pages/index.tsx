@@ -8,11 +8,9 @@ import {useState} from "react";
 import {IPlace} from "@/models/interfaces/place.interface";
 import Search from "@/components/ui/search/Search";
 import Filters from "@/components/common/home/filters/Filters";
-import {API_URL} from "../app/constants";
 import Meta from "@/utils/Meta";
 import {sanityClient} from "../app/sanity";
-
-const placeQuery = `*[_type == "place"]`
+import {queries} from "@/utils/queries";
 
 const Home: NextPage<HomeType> = ({initialPlaces}) => {
     const [places, setPlaces] = useState<IPlace[]>(initialPlaces)
@@ -34,8 +32,7 @@ const Home: NextPage<HomeType> = ({initialPlaces}) => {
     )
 }
 export const getStaticProps: GetStaticProps = async () => {
-    let queries;
-    const result = await sanityClient.fetch(placeQuery)
+    const result = await sanityClient.fetch(queries.getPlaces)
 
     return {
         props: {

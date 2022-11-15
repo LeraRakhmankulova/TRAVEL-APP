@@ -18,7 +18,7 @@ const PlaceItem: FC<LocationType> = ({places, isLoading}) => {
                 places.length > 0 ?
                     <div className={styles.place__items}>
                         {places.map((item, index) =>
-                            <Link href={`/place/${item.slug}`}
+                            <Link href={`/place/${item.slug.current}`}
                                   key={index}>
                                 <div
                                     style={{backgroundImage: `url(${urlFor(item.imagePath).url()})`, zIndex: `${index}`}}

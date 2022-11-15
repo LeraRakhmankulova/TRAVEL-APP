@@ -13,7 +13,7 @@ const DetailsBlock: FC<any> = ({place}) => {
             </div>
             <div className={styles.details__description}>
                 <p>{<PortableText value={place.description} />}</p>
-                <Map location={place.location.city}/>
+                <Map location={place.location.country}/>
                 <div className={styles.details__info}>
                     <div>
                         <span className="material-icons-outlined">star_half</span>

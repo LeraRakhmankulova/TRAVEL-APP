@@ -17,7 +17,7 @@ const navItems:NavItemType[] = [
     },
     {
         icon: 'person_outline',
-        link: '/profile'
+        link: '/auth'
     }
 ]
 const Footer = () => {

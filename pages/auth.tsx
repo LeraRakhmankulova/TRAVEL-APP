@@ -1,14 +1,15 @@
 import MainContainer from "@/components/ui/containers/MainContainer";
 import Meta from "@/utils/Meta";
+import AuthPage from "@/components/common/auth/AuthPage";
 
-const Profile = () => {
+const Auth = () => {
     return (
         <MainContainer>
-            <Meta title="My profile"
+            <Meta title="Authorization"
                   description="Best routes for travelling"/>
-            <div>hhkh</div>
+            <AuthPage/>
         </MainContainer>
     )
 }
 
-export default Profile
+export default Auth

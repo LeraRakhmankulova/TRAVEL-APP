@@ -5,16 +5,20 @@ import DetailsBlock from "./detailsBlock/DetailsBlock";
 import styles from './index.module.sass'
 import PlaceHeader from "./header/PlaceHeader";
 import {urlFor} from "../../../sanity";
+import Meta from "@/utils/Meta";
 
 interface IPlacePage {
     place: IPlace
 }
+
 const PlacePage: FC<IPlacePage> = ({place}) => {
     return (
         <div className={styles.place}>
+            <Meta title={`${place.location.country}, ${place.location.city}`}
+                description="Best routes for travelling"/>
             <div style={{
                 backgroundImage: `url(${urlFor(place.imagePath)})`,
-                height: '60vh',
+                height: '70vh',
                 position: 'relative',
                 backgroundSize: 'cover'
             }}>

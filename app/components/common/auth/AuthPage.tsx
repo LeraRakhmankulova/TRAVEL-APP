@@ -8,21 +8,21 @@ const AuthPage = () => {
     })
 
     const onSubmit: SubmitHandler<IAuthField> = (data) => {
-
+        console.log(data)
     }
 
     return (
         <div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <label>Email</label>
-                <input {...register('email', {required: 'Email is invalid :('})}
+                <input {...register('email', {required: true, pattern: /^[\w-\\.]+@([\w-]+\.)+[\w-]{2,4}$/g})}
                        type="text"/>
-                {errors.email && <div>{errors.email.message}</div>}
+                {errors.email && <span>Email is invalid</span>}
                 <label>Password</label>
                 <input type="password"
-                       {...register('password', {required: 'Password is invalid :( '})}/>
-                {errors.passowrd && <div>{errors.password?.message}</div>}
-                <input type='submit'/>
+                       {...register('password', {required: true, minLength: 6})}/>
+                {errors.password && <span>Password is invalid</span>}
+                <input type="submit" />
             </form>
         </div>
     )
@@ -30,4 +30,4 @@ const AuthPage = () => {
 
 export default AuthPage
 
-//вынести инпуты + докинуть валидации
+//вынести инпуты 

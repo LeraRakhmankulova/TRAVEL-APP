@@ -1,0 +1,25 @@
+@import "app/assets/styles/mixins.sass"
+
+.icon
+  > a
+    @include blur-effect
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    padding: 12px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: box-shadow .6s ease
+
+    > span
+      font-size: 18px
+      color: white
+      opacity: .7
+      transition: all 1s ease
+
+    &:hover
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.04)
+
+      span
+        opacity: .95

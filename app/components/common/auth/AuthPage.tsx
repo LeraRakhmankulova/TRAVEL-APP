@@ -2,6 +2,8 @@ import styles from './index.module.sass'
 import {SubmitHandler, useForm} from "react-hook-form";
 import {IAuthField} from "@/models/interfaces/authField.interface";
 import {useState} from "react";
+import Link from "next/link";
+import Icon from "@/components/ui/icon/Icon";
 
 const AuthPage = () => {
     const [isVisible, setIsVisible] = useState(true)
@@ -16,6 +18,9 @@ const AuthPage = () => {
     return (
         <div className={styles.auth}>
             <div className={styles.auth__wrapper}>
+                <div className={styles.auth__header}>
+                    <Icon href="/" name="arrow_back_ios_new"/>
+                </div>
                 <div className={styles.auth__welcome}>
                     <h2>Hey there,</h2>
                     <h1>Welcome Back</h1>
@@ -32,23 +37,30 @@ const AuthPage = () => {
                         </div>
                         {errors.email && <span>Email is invalid</span>}
                     </div>
-                    <div className={styles.auth__field__wrrapper}>
+                    <div className={styles.auth__field__wrapper}>
                         <div className={styles.auth__field}>
                             <span className='material-icons-outlined'>lock</span>
-                            <input type="password" placeholder="Password"
+                            <input type={isVisible ? "text" : "password"} placeholder="Password"
                                    {...register('password', {required: true, minLength: 6})}/>
                             <span className='material-icons-outlined' onClick={() => setIsVisible(!isVisible)}>
                                 {isVisible ? "visibility" : "visibility_off"}</span>
                         </div>
                         {errors.password && <span>Password is invalid</span>}
                     </div>
-                    <input type="submit"/>
                 </form>
+                <Link href='/' className={styles.auth__link}>
+                    <h5>Forgot your password?</h5>
+                </Link>
             </div>
+            <button className={styles.auth__button}>
+                <span className='material-icons-outlined'>login</span>
+                <div>Login</div>
+            </button>
+            <Link href='/' className={styles.auth__register}>
+                <h5>Don’t have an account yet? Register</h5>
+            </Link>
         </div>
     )
 }
 
 export default AuthPage
-
-//вынести инпуты

@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca5bba2-666e-4558-b1fd-64d93b5e6fcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/queries.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ui/icon/Icon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ui/icon/index.module.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ui/input/Input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ui/input/index.module.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/home/placeItem/PlaceItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/home/placeItem/PlaceItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/place/Place.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/place/Place.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/place/detailsBlock/DetailsBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/place/detailsBlock/DetailsBlock.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/welcome/WelcomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/welcome/WelcomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/place/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/place/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/auth/AuthPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/auth/AuthPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/auth/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/auth/index.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/place/header/PlaceHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/place/header/PlaceHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,22 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Valeria/Desktop/TRAVEL-APP&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Valeria\\Desktop\\TRAVEL-APP\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Valeria/Desktop/TRAVEL-APP",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
+    "ts.external.directory.path": "C:\\Users\\Valeria\\Desktop\\TRAVEL-APP\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\pages" />
@@ -92,7 +91,8 @@
       <workItem from="1668451609341" duration="2907000" />
       <workItem from="1668455211255" duration="4978000" />
       <workItem from="1668519295860" duration="888000" />
-      <workItem from="1668520207295" duration="5871000" />
+      <workItem from="1668520207295" duration="8889000" />
+      <workItem from="1668583950731" duration="10484000" />
     </task>
     <servers />
   </component>

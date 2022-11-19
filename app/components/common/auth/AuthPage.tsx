@@ -4,15 +4,17 @@ import {IAuthField} from "@/models/interfaces/authField.interface";
 import {useState} from "react";
 import Link from "next/link";
 import Icon from "@/components/ui/icon/Icon";
+import {signUp} from "next-auth-sanity/client";
 
 const AuthPage = () => {
+    const [typeFrom, setTypeFrom] = useState<'login' | 'register'>('login')
     const [isVisible, setIsVisible] = useState(true)
     const {register, handleSubmit, formState: {errors}} = useForm<IAuthField>({
         mode: "onChange"
     })
 
-    const onSubmit: SubmitHandler<IAuthField> = (data) => {
-        console.log(data)
+    const onSubmit: SubmitHandler<IAuthField> = async (data) => {
+        await signUp(data)
     }
 
     return (
@@ -23,9 +25,36 @@ const AuthPage = () => {
                 </div>
                 <div className={styles.auth__welcome}>
                     <h2>Hey there,</h2>
-                    <h1>Welcome Back</h1>
+                    {typeFrom == 'login' ?
+                        (<h1>Welcome Back</h1>) :
+                        (<h1>Create an Account</h1>)}
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)} className={styles.auth__form}>
+                    {typeFrom == 'register' && (
+                        <>
+                            <div className={styles.auth__field__wrapper}>
+                                <div className={styles.auth__field}>
+                                    <span className='material-icons-outlined'>person</span>
+                                    <input {...register('name', {
+                                        required: true
+                                    })}
+                                           type="text" placeholder="First name"/>
+                                </div>
+                                {errors.email && <span>This is a required field!</span>}
+                            </div>
+                            <div className={styles.auth__field__wrapper}>
+                                <div className={styles.auth__field}>
+                                    <span className='material-icons-outlined'>person</span>
+                                    <input {...register('surname', {
+                                        required: true
+                                    })}
+                                           type="text" placeholder="Last name"/>
+                                </div>
+                                {errors.email && <span>This is a required field!</span>}
+                            </div>
+                        </>
+                    )}
+
                     <div className={styles.auth__field__wrapper}>
                         <div className={styles.auth__field}>
                             <span className='material-icons-outlined'>mail</span>
@@ -45,7 +74,7 @@ const AuthPage = () => {
                             <span className='material-icons-outlined' onClick={() => setIsVisible(!isVisible)}>
                                 {isVisible ? "visibility" : "visibility_off"}</span>
                         </div>
-                        {errors.password && <span>Password is invalid</span>}
+                        {errors.password && <span>Password must be longer than 6 characters</span>}
                     </div>
                 </form>
                 <Link href='/' className={styles.auth__link}>
@@ -54,11 +83,11 @@ const AuthPage = () => {
             </div>
             <button className={styles.auth__button}>
                 <span className='material-icons-outlined'>login</span>
-                <div>Login</div>
+                <div>{typeFrom == 'register' ? 'Register' : 'Login'}</div>
             </button>
-            <Link href='/' className={styles.auth__register}>
+            <button onClick={() => setTypeFrom('register')}>
                 <h5>Don’t have an account yet? Register</h5>
-            </Link>
+            </button>
         </div>
     )
 }

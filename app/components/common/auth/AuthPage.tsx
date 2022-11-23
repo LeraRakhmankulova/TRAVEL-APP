@@ -4,8 +4,9 @@ import {IAuthField} from "@/models/interfaces/authField.interface";
 import {useState} from "react";
 import Link from "next/link";
 import Icon from "@/components/ui/icon/Icon";
-import {signUp} from "next-auth-sanity/client";
 import {signIn} from "next-auth/react";
+import {toast} from 'react-toastify';
+import {signUp} from "next-auth-sanity/client";
 
 const AuthPage = () => {
     const [typeFrom, setTypeFrom] = useState<'login' | 'register'>('login')
@@ -14,9 +15,10 @@ const AuthPage = () => {
         mode: "onChange"
     })
 
-    const onSubmit: SubmitHandler<IAuthField> = async (data) => {
+    const onSubmit: SubmitHandler<IAuthField> = async data => {
         if (typeFrom === 'register') {
-            await signUp(data)
+            const res = await signUp(data)
+            if( res.error) toast.error(res.error)
         } else
             await signIn('sanity-login', {
                 redirect: false,
@@ -88,7 +90,7 @@ const AuthPage = () => {
                     <h5>Forgot your password?</h5>
                 </Link>
             </div>
-            <button className={styles.auth__button}>
+            <button className={styles.auth__button} onClick={() => onSubmit}>
                 <span className='material-icons-outlined'>login</span>
                 <div>{typeFrom == 'register' ? 'Register' : 'Login'}</div>
             </button>

@@ -5,6 +5,7 @@ import {useState} from "react";
 import Link from "next/link";
 import Icon from "@/components/ui/icon/Icon";
 import {signUp} from "next-auth-sanity/client";
+import {signIn} from "next-auth/react";
 
 const AuthPage = () => {
     const [typeFrom, setTypeFrom] = useState<'login' | 'register'>('login')
@@ -14,7 +15,13 @@ const AuthPage = () => {
     })
 
     const onSubmit: SubmitHandler<IAuthField> = async (data) => {
-        await signUp(data)
+        if (typeFrom === 'register') {
+            await signUp(data)
+        } else
+            await signIn('sanity-login', {
+                redirect: false,
+                ...data
+            })
     }
 
     return (

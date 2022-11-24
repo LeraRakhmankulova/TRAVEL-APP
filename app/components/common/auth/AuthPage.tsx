@@ -14,16 +14,25 @@ const AuthPage = () => {
     const {register, handleSubmit, formState: {errors}} = useForm<IAuthField>({
         mode: "onChange"
     })
-
     const onSubmit: SubmitHandler<IAuthField> = async data => {
         if (typeFrom === 'register') {
-            const res = await signUp(data)
-            if( res.error) toast.error(res.error)
-        } else
-            await signIn('sanity-login', {
+            await signUp(data)
+            if (response.error) {
+                toast.error(response.error)
+                return
+            }
+        } else {
+            const response = await signIn('sanity-login', {
                 redirect: false,
                 ...data
             })
+            if (response.error) {
+                toast.error(response.error)
+                return
+            }
+            // @ts-ignore
+
+        }
     }
 
     return (
@@ -39,30 +48,30 @@ const AuthPage = () => {
                         (<h1>Create an Account</h1>)}
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)} className={styles.auth__form}>
-                    {typeFrom == 'register' && (
-                        <>
-                            <div className={styles.auth__field__wrapper}>
-                                <div className={styles.auth__field}>
-                                    <span className='material-icons-outlined'>person</span>
-                                    <input {...register('name', {
-                                        required: true
-                                    })}
-                                           type="text" placeholder="First name"/>
-                                </div>
-                                {errors.email && <span>This is a required field!</span>}
-                            </div>
-                            <div className={styles.auth__field__wrapper}>
-                                <div className={styles.auth__field}>
-                                    <span className='material-icons-outlined'>person</span>
-                                    <input {...register('surname', {
-                                        required: true
-                                    })}
-                                           type="text" placeholder="Last name"/>
-                                </div>
-                                {errors.email && <span>This is a required field!</span>}
-                            </div>
-                        </>
-                    )}
+                    {/*{typeFrom == 'register' && (*/}
+                    {/*    <>*/}
+                    {/*        <div className={styles.auth__field__wrapper}>*/}
+                    {/*            <div className={styles.auth__field}>*/}
+                    {/*                <span className='material-icons-outlined'>person</span>*/}
+                    {/*                <input {...register('name', {*/}
+                    {/*                    required: true*/}
+                    {/*                })}*/}
+                    {/*                       type="text" placeholder="First name"/>*/}
+                    {/*            </div>*/}
+                    {/*            {errors.email && <span>This is a required field!</span>}*/}
+                    {/*        </div>*/}
+                    {/*        <div className={styles.auth__field__wrapper}>*/}
+                    {/*            <div className={styles.auth__field}>*/}
+                    {/*                <span className='material-icons-outlined'>person</span>*/}
+                    {/*                <input {...register('surname', {*/}
+                    {/*                    required: true*/}
+                    {/*                })}*/}
+                    {/*                       type="text" placeholder="Last name"/>*/}
+                    {/*            </div>*/}
+                    {/*            {errors.email && <span>This is a required field!</span>}*/}
+                    {/*        </div>*/}
+                    {/*    </>*/}
+                    {/*)}*/}
 
                     <div className={styles.auth__field__wrapper}>
                         <div className={styles.auth__field}>
@@ -85,15 +94,16 @@ const AuthPage = () => {
                         </div>
                         {errors.password && <span>Password must be longer than 6 characters</span>}
                     </div>
+                    <button className={styles.auth__button} type='submit'>
+                        <span className='material-icons-outlined'>login</span>
+                        <div>{typeFrom == 'register' ? 'Register' : 'Login'}</div>
+                    </button>
                 </form>
                 <Link href='/' className={styles.auth__link}>
                     <h5>Forgot your password?</h5>
                 </Link>
             </div>
-            <button className={styles.auth__button} onClick={() => onSubmit}>
-                <span className='material-icons-outlined'>login</span>
-                <div>{typeFrom == 'register' ? 'Register' : 'Login'}</div>
-            </button>
+
             <button onClick={() => setTypeFrom('register')}>
                 <h5>Don’t have an account yet? Register</h5>
             </button>

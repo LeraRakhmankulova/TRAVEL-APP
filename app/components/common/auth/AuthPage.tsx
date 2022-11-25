@@ -7,20 +7,26 @@ import Icon from "@/components/ui/icon/Icon";
 import {signIn} from "next-auth/react";
 import {toast} from 'react-toastify';
 import {signUp} from "next-auth-sanity/client";
+import {useRouter} from "next/router";
 
 const AuthPage = () => {
-    const [typeFrom, setTypeFrom] = useState<'login' | 'register'>('login')
-    const [isVisible, setIsVisible] = useState(true)
-    const {register, handleSubmit, formState: {errors}} = useForm<IAuthField>({
-        mode: "onChange"
+    const [typeForm, setTypeForm] = useState<'login' | 'register'>('login')
+    const [isVisible, setIsVisible] = useState(false)
+    const {
+        handleSubmit,
+        register,
+        formState: { errors }
+    } = useForm<IAuthField>({
+        mode: 'onChange'
     })
+
+    const isReg = typeForm === 'register'
+
+    const { push } = useRouter()
+
     const onSubmit: SubmitHandler<IAuthField> = async data => {
-        if (typeFrom === 'register') {
+        if (isReg) {
             await signUp(data)
-            if (response.error) {
-                toast.error(response.error)
-                return
-            }
         } else {
             const response = await signIn('sanity-login', {
                 redirect: false,
@@ -30,8 +36,8 @@ const AuthPage = () => {
                 toast.error(response.error)
                 return
             }
-            // @ts-ignore
 
+            await push('/')
         }
     }
 
@@ -43,7 +49,7 @@ const AuthPage = () => {
                 </div>
                 <div className={styles.auth__welcome}>
                     <h2>Hey there,</h2>
-                    {typeFrom == 'login' ?
+                    {typeForm == 'login' ?
                         (<h1>Welcome Back</h1>) :
                         (<h1>Create an Account</h1>)}
                 </div>
@@ -96,7 +102,7 @@ const AuthPage = () => {
                     </div>
                     <button className={styles.auth__button} type='submit'>
                         <span className='material-icons-outlined'>login</span>
-                        <div>{typeFrom == 'register' ? 'Register' : 'Login'}</div>
+                        <div>{typeForm == 'register' ? 'Register' : 'Login'}</div>
                     </button>
                 </form>
                 <Link href='/' className={styles.auth__link}>
@@ -104,7 +110,7 @@ const AuthPage = () => {
                 </Link>
             </div>
 
-            <button onClick={() => setTypeFrom('register')}>
+            <button onClick={() => setTypeForm('register')}>
                 <h5>Don’t have an account yet? Register</h5>
             </button>
         </div>

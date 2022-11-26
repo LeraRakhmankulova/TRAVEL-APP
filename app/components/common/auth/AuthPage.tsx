@@ -37,7 +37,7 @@ const AuthPage = () => {
                 return
             }
 
-            await push('/')
+            await push('/profile')
         }
     }
 

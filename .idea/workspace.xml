@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca5bba2-666e-4558-b1fd-64d93b5e6fcd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/components/common/profile/ProfilePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/common/profile/index.module.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/common/auth/AuthPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/auth/AuthPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

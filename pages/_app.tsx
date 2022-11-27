@@ -3,6 +3,7 @@ import type {AppProps} from 'next/app'
 import NextProgressBar from 'nextjs-progressbar'
 import {SessionProvider} from "next-auth/react";
 import {ToastContainer} from "react-toastify";
+import AuthProvider from "../app/guards/AuthProvider";
 
 export default function App({Component, pageProps: {session, ...pageProps}}: AppProps) {
     return (
@@ -17,8 +18,10 @@ export default function App({Component, pageProps: {session, ...pageProps}}: App
                 options={{easing: 'ease', speed: 500}}
             />
             <SessionProvider session={session}>
-                <Component {...pageProps} />
-                <ToastContainer theme="dark" draggable={false}/>
+                <AuthProvider Component={{Component}}>
+                    <Component {...pageProps} />
+                    <ToastContainer theme="dark" draggable={false}/>
+                </AuthProvider>
             </SessionProvider>
         </>
     )

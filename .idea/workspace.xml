@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca5bba2-666e-4558-b1fd-64d93b5e6fcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/guards/AuthProvider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/authProvider/CheckRole.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/guards/CheckRole.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/common/profile/ProfilePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/profile/ProfilePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/guards/AuthProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/guards/AuthProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/guards/CheckRole.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/guards/CheckRole.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/explore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/explore.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +96,7 @@
       <workItem from="1669048142146" duration="56000" />
       <workItem from="1669204227604" duration="641000" />
       <workItem from="1669233588660" duration="778000" />
-      <workItem from="1669574663339" duration="1581000" />
+      <workItem from="1669574663339" duration="2854000" />
     </task>
     <servers />
   </component>

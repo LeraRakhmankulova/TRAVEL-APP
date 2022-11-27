@@ -11,5 +11,5 @@ const Profile = () => {
         </MainContainer>
     )
 }
-
+Profile.isOnlyUser = true
 export default Profile

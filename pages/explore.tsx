@@ -5,5 +5,5 @@ const Explore = () => {
         <MainContainer>lsllsls</MainContainer>
     )
 }
-
+Explore.isOnlyUser = true
 export default Explore

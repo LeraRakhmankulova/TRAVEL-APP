@@ -18,7 +18,7 @@ export default function App({Component, pageProps: {session, ...pageProps}}: App
                 options={{easing: 'ease', speed: 500}}
             />
             <SessionProvider session={session}>
-                <AuthProvider Component={{Component}}>
+                <AuthProvider Component={Component}>
                     <Component {...pageProps} />
                     <ToastContainer theme="dark" draggable={false}/>
                 </AuthProvider>

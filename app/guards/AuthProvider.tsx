@@ -1,13 +1,18 @@
 import {FC} from "react"
 import CheckRole, {TypeComponentAuthFields} from "./CheckRole";
 
+import dynamic from 'next/dynamic'
 
-const AuthProvider: FC<TypeComponentAuthFields> = ({children, Component: {isOnlyUser}}) => {
+const DynamicCheckRole = dynamic(() => import('./CheckRole'), {
+    ssr: false
+})
 
-    return !isOnlyUser ?
-            <div>{children}</div> :
-        <CheckRole Component={{isOnlyUser}}>{children}</CheckRole>
-
+const AuthProvider: FC<PropsWithChildren<TypeComponentAuthFields>> = ({children,Component: { isOnlyUser }}) => {
+    return !isOnlyUser ? (
+        <>{children}</>
+    ) : (
+        <DynamicCheckRole Component={{ isOnlyUser }}>{children}</DynamicCheckRole>
+    )
 }
 
 export default AuthProvider

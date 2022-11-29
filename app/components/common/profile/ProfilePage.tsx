@@ -11,6 +11,7 @@ const ProfilePage = () => {
     return (
         <div>
             <h1>About me</h1>
+            <div>{data?.user?.name}</div>
             <div>{data?.user?.email}</div>
             <button onClick={() => signOut()}>LOGOUT</button>
         </div>

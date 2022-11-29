@@ -30,7 +30,7 @@ const AuthPage = () => {
         } else {
             const response = await signIn('sanity-login', {
                 redirect: false,
-                ...data
+                ...data,
             })
             if (response.error) {
                 toast.error(response.error)
@@ -54,30 +54,30 @@ const AuthPage = () => {
                         (<h1>Create an Account</h1>)}
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)} className={styles.auth__form}>
-                    {/*{typeFrom == 'register' && (*/}
-                    {/*    <>*/}
-                    {/*        <div className={styles.auth__field__wrapper}>*/}
-                    {/*            <div className={styles.auth__field}>*/}
-                    {/*                <span className='material-icons-outlined'>person</span>*/}
-                    {/*                <input {...register('name', {*/}
-                    {/*                    required: true*/}
-                    {/*                })}*/}
-                    {/*                       type="text" placeholder="First name"/>*/}
-                    {/*            </div>*/}
-                    {/*            {errors.email && <span>This is a required field!</span>}*/}
-                    {/*        </div>*/}
-                    {/*        <div className={styles.auth__field__wrapper}>*/}
-                    {/*            <div className={styles.auth__field}>*/}
-                    {/*                <span className='material-icons-outlined'>person</span>*/}
-                    {/*                <input {...register('surname', {*/}
-                    {/*                    required: true*/}
-                    {/*                })}*/}
-                    {/*                       type="text" placeholder="Last name"/>*/}
-                    {/*            </div>*/}
-                    {/*            {errors.email && <span>This is a required field!</span>}*/}
-                    {/*        </div>*/}
-                    {/*    </>*/}
-                    {/*)}*/}
+                    {isReg && (
+                        <>
+                            <div className={styles.auth__field__wrapper}>
+                                <div className={styles.auth__field}>
+                                    <span className='material-icons-outlined'>person</span>
+                                    <input {...register('name', {
+                                        required: true
+                                    })}
+                                           type="text" placeholder="First name"/>
+                                </div>
+                                {errors.email && <span>This is a required field!</span>}
+                            </div>
+                            <div className={styles.auth__field__wrapper}>
+                                <div className={styles.auth__field}>
+                                    <span className='material-icons-outlined'>person</span>
+                                    <input {...register('surname', {
+                                        required: true
+                                    })}
+                                           type="text" placeholder="Last name"/>
+                                </div>
+                                {errors.email && <span>This is a required field!</span>}
+                            </div>
+                        </>
+                    )}
 
                     <div className={styles.auth__field__wrapper}>
                         <div className={styles.auth__field}>

@@ -9,8 +9,8 @@ const navItems: NavItemType[] = [
         link: '/'
     },
     {
-        icon: 'explore',
-        link: '/explore'
+        icon: 'favorite',
+        link: '/favorites'
     },
     {
         icon: 'place',
@@ -30,7 +30,7 @@ const Footer = () => {
                     </button>)}
                 {data?.user ?
                     <button onClick={() => push('/profile')}>
-                        <span className='material-icons-outlined'>person</span>
+                        <span className='material-icons-outlined'>account_circle</span>
                     </button> :
                     <button onClick={() => push('/auth')}>
                         <span className='material-icons-outlined'>login</span>

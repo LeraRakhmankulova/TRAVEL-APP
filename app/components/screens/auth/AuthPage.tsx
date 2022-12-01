@@ -105,7 +105,7 @@ const AuthPage = () => {
                         <div>{typeForm == 'register' ? 'Register' : 'Login'}</div>
                     </button>
                 </form>
-                <Link href='/' className={styles.auth__link}>
+                <Link href='/pages' className={styles.auth__link}>
                     <h5>Forgot your password?</h5>
                 </Link>
             </div>

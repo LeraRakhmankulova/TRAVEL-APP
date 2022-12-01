@@ -1,9 +1,8 @@
 import styles from './index.module.sass'
 import {FC} from "react";
 import {IPlace} from "@/models/interfaces/place.interface";
-import Link from "next/link";
 import Skeletons from "../../../ui/skeletons/Skeleton";
-import {urlFor} from "../../../../sanity";
+import PlaceCard from "@/components/common/place/placeCard/PlaceCard";
 
 type LocationType = {
     places: IPlace[]
@@ -18,14 +17,7 @@ const PlaceItem: FC<LocationType> = ({places, isLoading}) => {
                 places.length > 0 ?
                     <div className={styles.place__items}>
                         {places.map((item, index) =>
-                            <Link href={`/place/${item.slug.current}`}
-                                  key={index}>
-                                <div
-                                    style={{backgroundImage: `url(${urlFor(item.imagePath).url()})`, zIndex: `${index}`}}
-                                    className={styles.place__item}>
-                                    <h2>{item.location.country}, {item.location.city}</h2>
-                                </div>
-                            </Link>)}
+                            <PlaceCard place={item} index={index}/>)}
                     </div> :
                     <div>Not found...</div>}
         </div>

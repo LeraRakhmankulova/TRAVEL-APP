@@ -12,15 +12,7 @@ const Favorites: NextPage<HomeType> = ({initialPlaces}) => {
         </MainContainer>
     )
 }
-export const getStaticProps: GetStaticProps = async () => {
-    const result = await sanityClient.fetch(queries.getPlaces)
 
-    return {
-        props: {
-            initialPlaces: result
-        }
-    }
-}
 
 Favorites.isOnlyUser = true
 export default Favorites

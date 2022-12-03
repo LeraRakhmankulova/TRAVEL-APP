@@ -9,8 +9,6 @@ import {IPlace} from "@/models/interfaces/place.interface";
 import Search from "@/components/ui/search/Search";
 import Filters from "@/components/common/home/filters/Filters";
 import Meta from "@/utils/Meta";
-import {sanityClient} from "../app/sanity";
-import {queries} from "@/utils/queries";
 
 const Home: NextPage<HomeType> = ({initialPlaces}) => {
     const [places, setPlaces] = useState<IPlace[]>(initialPlaces)
@@ -30,15 +28,6 @@ const Home: NextPage<HomeType> = ({initialPlaces}) => {
             </div>
         </MainContainer>
     )
-}
-export const getStaticProps: GetStaticProps = async () => {
-    const result = await sanityClient.fetch(queries.getPlaces)
-
-    return {
-        props: {
-            initialPlaces: result
-        }
-    }
 }
 
 export default Home

@@ -13,16 +13,16 @@ type IPlaceCard = {
 const PlaceCard: FC<PropsWithChildren<IPlaceCard>> = ({place, index, isFav}) => {
     return (
         <>
-            <Link href={`/place/${place.slug.current}`}
-                  key={index}>
-                <div
-                    style={{backgroundImage: `url(${urlFor(place.imagePath).url()})`, zIndex: `${index}`}}
-                    className={styles.place__item}>
-                    <h2>{place.location.country}, {place.location.city}</h2>
-                </div>
-            </Link>
-        </>
-    )
+                <Link href={`/place/${place.slug}`}
+                      key={index}>
+                    <div
+                        style={{backgroundImage: `url(${urlFor(place.imagePath).url()})`, zIndex: `${index}`}}
+                        className={styles.place__item}>
+                        <h2>{place.location.country}, {place.location.city}</h2>
+                    </div>
+                </Link>
+            </>
+           )
 }
 
 export default PlaceCard

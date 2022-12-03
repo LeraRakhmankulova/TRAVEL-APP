@@ -7,12 +7,10 @@
     "prebuild": "echo 'Building Sanity to public/studio' && cd travel && yarn && npx @sanity/cli build ../public/studio -y && echo 'Done'",
     "build": "next build",
     "start": "next start",
-    "sanity": "cd TRAVEL-APP && sanity start",
     "lint": "next lint"
   },
   "dependencies": {
     "@portabletext/react": "^2.0.0",
-    "@sanity/image-url": "^1.0.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
@@ -23,8 +21,6 @@
     "framer-motion-3d": "^7.6.5",
     "material-icons": "^1.12.1",
     "next": "13.0.2",
-    "next-auth-sanity": "^1.4.4",
-    "next-sanity": "^1.0.9",
     "nextjs-progressbar": "^0.0.16",
     "queries": "^0.1.0",
     "react": "18.2.0",

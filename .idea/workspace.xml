@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca5bba2-666e-4558-b1fd-64d93b5e6fcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/screens/favorites/index.module.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/screens/profile/index.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/auth/AuthPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/screens/auth/AuthPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/auth/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/screens/auth/index.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/favorites/FavoritePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/screens/favorites/FavoritePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/favorites/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/place/placeCard/PlaceCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/home/placeItem/PlaceItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/home/placeItem/PlaceItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/home/placeItem/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/home/placeItem/index.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/profile/ProfilePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/screens/profile/ProfilePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/common/profile/index.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/common/place/placeCard/index.module.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/favorites.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/favorites.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +93,7 @@
       <workItem from="1669204227604" duration="641000" />
       <workItem from="1669233588660" duration="778000" />
       <workItem from="1669574663339" duration="2854000" />
-      <workItem from="1669755500059" duration="3618000" />
+      <workItem from="1669755500059" duration="4802000" />
     </task>
     <servers />
   </component>

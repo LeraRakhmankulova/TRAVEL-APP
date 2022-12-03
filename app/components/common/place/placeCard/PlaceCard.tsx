@@ -2,7 +2,6 @@ import styles from './index.module.sass'
 import {IPlace} from "@/models/interfaces/place.interface";
 import {FC} from "react";
 import Link from "next/link";
-import {urlFor} from "../../../../sanity";
 import {PropsWithChildren} from "preact/compat";
 
 type IPlaceCard = {

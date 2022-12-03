@@ -1,4 +1,4 @@
-import {FC} from "react"
+import {FC, PropsWithChildren} from "react"
 import CheckRole, {TypeComponentAuthFields} from "./CheckRole";
 
 import dynamic from 'next/dynamic'

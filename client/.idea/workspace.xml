@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aca5bba2-666e-4558-b1fd-64d93b5e6fcd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2H8oGlMkzlbqettIUeJnv8CXUZO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Valeria/Desktop/TRAVEL-APP&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Valeria\\Desktop\\TRAVEL-APP\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\app\components\screens" />
+      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\app" />
+      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\pages" />
+      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\public" />
+      <recent name="C:\Users\Valeria\Desktop\TRAVEL-APP\components\ui\containers" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aca5bba2-666e-4558-b1fd-64d93b5e6fcd" name="Changes" comment="" />
+      <created>1667675980637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667675980637</updated>
+      <workItem from="1667675984364" duration="11773000" />
+      <workItem from="1667715619863" duration="14672000" />
+      <workItem from="1667851520253" duration="188000" />
+      <workItem from="1667851721581" duration="2122000" />
+      <workItem from="1667855945680" duration="5932000" />
+      <workItem from="1667918002433" duration="11232000" />
+      <workItem from="1668015424940" duration="1323000" />
+      <workItem from="1668018885799" duration="510000" />
+      <workItem from="1668020556482" duration="8147000" />
+      <workItem from="1668077928015" duration="10284000" />
+      <workItem from="1668102241694" duration="5927000" />
+      <workItem from="1668173049802" duration="11000" />
+      <workItem from="1668173727947" duration="52000" />
+      <workItem from="1668241583327" duration="1009000" />
+      <workItem from="1668266806627" duration="62000" />
+      <workItem from="1668370071643" duration="2009000" />
+      <workItem from="1668372143986" duration="69000" />
+      <workItem from="1668372253559" duration="1371000" />
+      <workItem from="1668409510175" duration="104000" />
+      <workItem from="1668410631698" duration="656000" />
+      <workItem from="1668436816915" duration="3723000" />
+      <workItem from="1668451609341" duration="2907000" />
+      <workItem from="1668455211255" duration="4978000" />
+      <workItem from="1668519295860" duration="888000" />
+      <workItem from="1668520207295" duration="8889000" />
+      <workItem from="1668583950731" duration="10621000" />
+      <workItem from="1668770581395" duration="59000" />
+      <workItem from="1668845012998" duration="3137000" />
+      <workItem from="1669048142146" duration="56000" />
+      <workItem from="1669204227604" duration="641000" />
+      <workItem from="1669233588660" duration="778000" />
+      <workItem from="1669574663339" duration="2854000" />
+      <workItem from="1669755500059" duration="5526000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

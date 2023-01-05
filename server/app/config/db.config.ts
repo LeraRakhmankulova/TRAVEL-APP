@@ -3,13 +3,12 @@ import { ConfigService } from "@nestjs/config";
 
 export const createTypeOrmProdConfig = (configService: ConfigService): TypeOrmModuleOptions => {
 	return ({
-		type: configService.get('TYPE'),
-		host: configService.get('HOST'),
-		port: configService.get('PORT'),
-		username: 'root',
-		password: 'root',
-		database: 'test',
-		entities: [],
+		type: 'postgres',
+		username: 'postgres',
+		password: configService.get('PASSWORD'),
+		database: configService.get('DATABASE'),
 		synchronize: true,
+		logging: true,
+		logger: 'advanced-console'
 	})
 }

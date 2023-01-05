@@ -1,11 +1,9 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { TypeOrmModule } from '@nestjs/typeorm'
-import { createTypeOrmProdConfig } from '../app/config/db.config'
 
 @Module({
-  imports: [TypeOrmModule.forRoot({ ...createTypeOrmProdConfig })],
+  imports: [],
   controllers: [AppController],
   providers: [AppService],
 })
